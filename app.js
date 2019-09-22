@@ -6,7 +6,9 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const functions = require('./config/comman');
 
-
+app.get('/',(req,res)=>{
+    res.send("working");
+})
 app.post('/chatbot',jsonParser,(req,res)=>{
     async function runSample(projectId = 'test-lhtake') {
         // A unique identifier for the given session
