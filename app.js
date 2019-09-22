@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const functions = require('./config/comman');
 
+
+
 app.get('/',(req,res)=>{
     res.send("working");
 })
@@ -16,7 +18,7 @@ app.post('/chatbot',jsonParser,(req,res)=>{
         const text = req.body.text;
         // Create a new session
         const sessionClient = new dialogflow.SessionsClient({
-          keyFilename: "/home/rushi/Desktop/web_html/reactjs/chatbot/chatbotAPI/config/Test-d0a73546118d.json"
+          keyFilename: "Test-d0a73546118d.json"
         });
         const sessionPath = sessionClient.sessionPath(projectId, sessionId);
        
