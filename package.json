@@ -8,8 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node":"10.16.0"
-    
+    "node": "10.16.0"
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/rushikc/chatbotAPI#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dialogflow": "^0.12.0",
     "uuid": "^3.3.3"
   }

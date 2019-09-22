@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const dialogflow = require('dialogflow');
 const uuid = require('uuid');
-
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
+const functions = require('./config/comman');
 
 
 app.post('/chatbot',jsonParser,(req,res)=>{
