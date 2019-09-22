@@ -1,0 +1,27 @@
+{
+  "name": "chatbotapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node":"10.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushikc/chatbotAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushikc/chatbotAPI/issues"
+  },
+  "homepage": "https://github.com/rushikc/chatbotAPI#readme",
+  "dependencies": {
+    "dialogflow": "^0.12.0",
+    "uuid": "^3.3.3"
+  }
+}
